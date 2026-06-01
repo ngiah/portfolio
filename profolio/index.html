@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Portfolio of Vo Xuan Nghia, an automation engineering intern focused on PLC, embedded systems, robotics, sensors, and data processing."
+    />
+    <title>Vo Xuan Nghia | Automation Engineering Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header" data-header>
+      <a class="brand" href="#top" aria-label="Vo Xuan Nghia home">
+        <span class="brand-mark">VN</span>
+        <span>Vo Xuan Nghia</span>
+      </a>
+
+      <nav class="nav" aria-label="Main navigation">
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-media" aria-hidden="true">
+          <img src="assets/automation-hero.png" alt="" />
+        </div>
+        <div class="hero-overlay"></div>
+
+        <div class="hero-content">
+          <p class="eyebrow">Automation Engineering Intern</p>
+          <h1 id="hero-title">Vo Xuan Nghia</h1>
+          <p class="hero-copy">
+            Third-year Control and Automation Engineering student building PLC,
+            embedded, robotics, and sensor-data systems for practical industrial
+            automation workflows.
+          </p>
+
+          <div class="hero-actions" aria-label="Primary actions">
+            <a class="button primary" href="#projects">View Projects</a>
+            <a class="button secondary" href="mailto:voxuannghia05@gmail.com">Email Me</a>
+          </div>
+
+          <dl class="quick-facts" aria-label="Profile highlights">
+            <div>
+              <dt>University</dt>
+              <dd>HCMUT</dd>
+            </div>
+            <div>
+              <dt>Major</dt>
+              <dd>Control & Automation</dd>
+            </div>
+            <div>
+              <dt>GPA</dt>
+              <dd>7.0/10</dd>
+            </div>
+          </dl>
+        </div>
+      </section>
+
+      <section class="section intro" id="about" aria-labelledby="about-title">
+        <div class="section-heading">
+          <p class="eyebrow">Summary</p>
+          <h2 id="about-title">Focused on practical automation systems</h2>
+        </div>
+        <div class="intro-grid">
+          <p>
+            I am seeking an internship where I can apply classroom knowledge to
+            professional engineering work, while developing programming skills,
+            automated system design capabilities, and production process
+            optimization experience.
+          </p>
+          <div class="contact-strip" aria-label="Contact details">
+            <a href="tel:+84332065428">033 206 5428</a>
+            <a href="mailto:voxuannghia05@gmail.com">voxuannghia05@gmail.com</a>
+            <a href="https://www.linkedin.com/in/nghia-voxuantdh" target="_blank" rel="noreferrer">
+              LinkedIn
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section projects-section" id="projects" aria-labelledby="projects-title">
+        <div class="section-heading">
+          <p class="eyebrow">Projects</p>
+          <h2 id="projects-title">Automation, sensors, and embedded work</h2>
+        </div>
+
+        <div class="filters" aria-label="Project filters">
+          <button class="filter active" type="button" data-filter="all">All</button>
+          <button class="filter" type="button" data-filter="plc">PLC</button>
+          <button class="filter" type="button" data-filter="embedded">Embedded</button>
+          <button class="filter" type="button" data-filter="robotics">Robotics</button>
+        </div>
+
+        <div class="project-grid">
+          <article class="project-card" data-tags="robotics embedded">
+            <div class="project-topline">
+              <span>Course Project 1</span>
+              <span>03/2026 - Present</span>
+            </div>
+            <h3>UGV Environmental Data Acquisition System</h3>
+            <p>
+              Proposed a UGV system architecture for environmental data
+              acquisition using LiDAR, IMU, and GPS/GNSS.
+            </p>
+            <ul>
+              <li>Defined system inputs, outputs, timeline, and operating environment.</li>
+              <li>Simulated encoder and PID control systems with Python, NumPy, SciPy, and Matplotlib.</li>
+              <li>Studied ROS 2 on Ubuntu for sensor processing and robot system development.</li>
+            </ul>
+            <div class="tags">
+              <span>LiDAR</span>
+              <span>IMU</span>
+              <span>GPS/GNSS</span>
+              <span>ROS 2</span>
+              <span>PID</span>
+            </div>
+          </article>
+
+          <article class="project-card" data-tags="plc">
+            <div class="project-topline">
+              <span>Monitoring System</span>
+              <span>01/2026 - 04/2026</span>
+            </div>
+            <h3>Temperature and Humidity Monitoring with PLC</h3>
+            <p>
+              Designed a monitoring system using an ES35-SW sensor, RS485
+              Modbus RTU, Siemens S7-1200 PLC, and C# WinForms interface.
+            </p>
+            <ul>
+              <li>Programmed TIA Portal logic to read Modbus registers and process sensor data.</li>
+              <li>Built real-time charts, alarms, connection status, and Excel data export.</li>
+              <li>Integrated START/STOP, CONNECT/DISCONNECT, and monitoring workflows.</li>
+            </ul>
+            <div class="tags">
+              <span>S7-1200</span>
+              <span>TIA Portal</span>
+              <span>Modbus RTU</span>
+              <span>C# WinForms</span>
+            </div>
+          </article>
+
+          <article class="project-card" data-tags="embedded">
+            <div class="project-topline">
+              <span>Communication Testing</span>
+              <span>01/2026 - 04/2026</span>
+            </div>
+            <h3>STM32-PC Communication via RS232</h3>
+            <p>
+              Developed STM32 to PC communication via RS232/UART for data
+              transmission, device control, and hardware testing.
+            </p>
+            <ul>
+              <li>Integrated EEPROM storage, SPI OLED display, and aging test logic.</li>
+              <li>Validated embedded data exchange and device control behavior.</li>
+            </ul>
+            <div class="tags">
+              <span>STM32</span>
+              <span>UART</span>
+              <span>RS232</span>
+              <span>SPI</span>
+              <span>OLED</span>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section skills-section" id="skills" aria-labelledby="skills-title">
+        <div class="section-heading">
+          <p class="eyebrow">Skills</p>
+          <h2 id="skills-title">Engineering toolkit</h2>
+        </div>
+
+        <div class="skills-grid">
+          <article>
+            <h3>Automation & Control</h3>
+            <p>Siemens S7-1200 PLC, TIA Portal, Factory I/O, Ladder Logic, sensors, conveyors, actuators.</p>
+          </article>
+          <article>
+            <h3>Programming & Data</h3>
+            <p>C/C++, Python, C# WinForms, NumPy, SciPy, Matplotlib, PID simulation.</p>
+          </article>
+          <article>
+            <h3>Embedded Systems</h3>
+            <p>STM32, UART, I2C, SPI, RS232, sensor reading, LCD display, DC motor control.</p>
+          </article>
+          <article>
+            <h3>Robotics & Sensors</h3>
+            <p>UGV, LiDAR, IMU, GPS/GNSS, basic ROS 2 on Ubuntu.</p>
+          </article>
+          <article>
+            <h3>Electrical Simulation</h3>
+            <p>Contactors, relays, VFDs, HMI, Proteus, LTspice, PSIM, LabVIEW.</p>
+          </article>
+          <article>
+            <h3>Soft Skills</h3>
+            <p>Self-learning, teamwork, responsibility, and problem-solving mindset.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section timeline-section" aria-labelledby="timeline-title">
+        <div class="section-heading">
+          <p class="eyebrow">Education</p>
+          <h2 id="timeline-title">Academic foundation</h2>
+        </div>
+
+        <div class="timeline">
+          <article>
+            <span>2023 - Present</span>
+            <h3>Bachelor's Degree in Control and Automation Engineering</h3>
+            <p>Ho Chi Minh City University of Technology (HCMUT), Vietnam National University HCMC.</p>
+            <p>Third-year student. GPA: 7.0/10.0 or 2.8/4.0.</p>
+          </article>
+          <article>
+            <span>Additional Information</span>
+            <h3>Language and certifications</h3>
+            <p>English. MOS 2019 certification in Excel and PowerPoint.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="contact-cta" id="contact" aria-labelledby="contact-title">
+        <div>
+          <p class="eyebrow">Contact</p>
+          <h2 id="contact-title">Open to automation engineering internship roles</h2>
+          <p>
+            Best fit: PLC programming, sensor integration, embedded control,
+            robotics data acquisition, or industrial monitoring systems.
+          </p>
+        </div>
+        <div class="contact-actions">
+          <a class="button primary" href="mailto:voxuannghia05@gmail.com">Send Email</a>
+          <button class="button secondary" type="button" data-copy="voxuannghia05@gmail.com">
+            Copy Email
+          </button>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>© 2026 Vo Xuan Nghia. Automation Engineering Portfolio.</p>
+    </footer>
+
+    <div class="toast" data-toast role="status" aria-live="polite">Email copied</div>
+    <script src="script.js"></script>
+  </body>
+</html>
