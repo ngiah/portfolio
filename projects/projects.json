@@ -1,0 +1,61 @@
+[
+  {
+    "folder": "projects/ugv-environmental-system/",
+    "title": "UGV Environmental Data Acquisition System",
+    "type": "Course Project 1",
+    "period": "03/2026 - Present",
+    "summary": "A proposed UGV architecture for environmental data acquisition using LiDAR, IMU, and GPS/GNSS.",
+    "categories": ["robotics", "embedded"],
+    "technologies": ["LiDAR", "IMU", "GPS/GNSS", "ROS 2", "PID"],
+    "highlights": [
+      "Defined system inputs, outputs, operating environment, and project timeline.",
+      "Simulated encoder and PID control systems with Python, NumPy, SciPy, and Matplotlib.",
+      "Studied ROS 2 on Ubuntu for future sensor processing and robot development."
+    ],
+    "cover": "",
+    "links": {
+      "Source": "",
+      "Demo": "",
+      "Report": ""
+    }
+  },
+  {
+    "folder": "projects/plc-monitoring-system/",
+    "title": "Temperature and Humidity Monitoring with PLC",
+    "type": "Monitoring System",
+    "period": "01/2026 - 04/2026",
+    "summary": "A monitoring system using an ES35-SW sensor, RS485 Modbus RTU, Siemens S7-1200 PLC, and C# WinForms.",
+    "categories": ["plc"],
+    "technologies": ["S7-1200", "TIA Portal", "Modbus RTU", "C# WinForms"],
+    "highlights": [
+      "Programmed TIA Portal logic to read Modbus registers and process sensor data.",
+      "Built real-time charts, alarms, connection status, and Excel data export.",
+      "Integrated START/STOP, CONNECT/DISCONNECT, and monitoring workflows."
+    ],
+    "cover": "",
+    "links": {
+      "Source": "",
+      "Demo": "",
+      "Report": ""
+    }
+  },
+  {
+    "folder": "projects/stm32-rs232/",
+    "title": "STM32-PC Communication via RS232",
+    "type": "Communication Testing",
+    "period": "01/2026 - 04/2026",
+    "summary": "STM32 to PC communication via RS232/UART for data transmission, device control, and hardware testing.",
+    "categories": ["embedded"],
+    "technologies": ["STM32", "UART", "RS232", "SPI", "OLED"],
+    "highlights": [
+      "Integrated EEPROM storage, SPI OLED display, and aging test logic.",
+      "Validated embedded data exchange and device control behavior."
+    ],
+    "cover": "",
+    "links": {
+      "Source": "",
+      "Demo": "",
+      "Report": ""
+    }
+  }
+]

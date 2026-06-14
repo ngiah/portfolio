@@ -97,6 +97,25 @@
           <h2 id="projects-title">Automation, sensors, and embedded work</h2>
         </div>
 
+        <div class="project-showcase">
+          <div class="project-showcase-copy">
+            <p class="eyebrow">Engineering Focus</p>
+            <h3>From sensor signals to working control systems</h3>
+            <p>
+              My projects connect field devices, embedded controllers, PLC logic,
+              and data interfaces into complete engineering workflows.
+            </p>
+            <div class="showcase-metrics" aria-label="Engineering project summary">
+              <div><strong>03</strong><span>Featured systems</span></div>
+              <div><strong>10+</strong><span>Core technologies</span></div>
+              <div><strong>End-to-end</strong><span>System thinking</span></div>
+            </div>
+          </div>
+          <div class="project-showcase-visual">
+            <img src="assets/canva-project-showcase.png" alt="Automation engineering project showcase designed in Canva" />
+          </div>
+        </div>
+
         <div class="filters" aria-label="Project filters">
           <button class="filter active" type="button" data-filter="all">All</button>
           <button class="filter" type="button" data-filter="plc">PLC</button>
@@ -104,76 +123,8 @@
           <button class="filter" type="button" data-filter="robotics">Robotics</button>
         </div>
 
-        <div class="project-grid">
-          <article class="project-card" data-tags="robotics embedded">
-            <div class="project-topline">
-              <span>Course Project 1</span>
-              <span>03/2026 - Present</span>
-            </div>
-            <h3>UGV Environmental Data Acquisition System</h3>
-            <p>
-              Proposed a UGV system architecture for environmental data
-              acquisition using LiDAR, IMU, and GPS/GNSS.
-            </p>
-            <ul>
-              <li>Defined system inputs, outputs, timeline, and operating environment.</li>
-              <li>Simulated encoder and PID control systems with Python, NumPy, SciPy, and Matplotlib.</li>
-              <li>Studied ROS 2 on Ubuntu for sensor processing and robot system development.</li>
-            </ul>
-            <div class="tags">
-              <span>LiDAR</span>
-              <span>IMU</span>
-              <span>GPS/GNSS</span>
-              <span>ROS 2</span>
-              <span>PID</span>
-            </div>
-          </article>
-
-          <article class="project-card" data-tags="plc">
-            <div class="project-topline">
-              <span>Monitoring System</span>
-              <span>01/2026 - 04/2026</span>
-            </div>
-            <h3>Temperature and Humidity Monitoring with PLC</h3>
-            <p>
-              Designed a monitoring system using an ES35-SW sensor, RS485
-              Modbus RTU, Siemens S7-1200 PLC, and C# WinForms interface.
-            </p>
-            <ul>
-              <li>Programmed TIA Portal logic to read Modbus registers and process sensor data.</li>
-              <li>Built real-time charts, alarms, connection status, and Excel data export.</li>
-              <li>Integrated START/STOP, CONNECT/DISCONNECT, and monitoring workflows.</li>
-            </ul>
-            <div class="tags">
-              <span>S7-1200</span>
-              <span>TIA Portal</span>
-              <span>Modbus RTU</span>
-              <span>C# WinForms</span>
-            </div>
-          </article>
-
-          <article class="project-card" data-tags="embedded">
-            <div class="project-topline">
-              <span>Communication Testing</span>
-              <span>01/2026 - 04/2026</span>
-            </div>
-            <h3>STM32-PC Communication via RS232</h3>
-            <p>
-              Developed STM32 to PC communication via RS232/UART for data
-              transmission, device control, and hardware testing.
-            </p>
-            <ul>
-              <li>Integrated EEPROM storage, SPI OLED display, and aging test logic.</li>
-              <li>Validated embedded data exchange and device control behavior.</li>
-            </ul>
-            <div class="tags">
-              <span>STM32</span>
-              <span>UART</span>
-              <span>RS232</span>
-              <span>SPI</span>
-              <span>OLED</span>
-            </div>
-          </article>
+        <div class="project-grid" data-project-grid aria-live="polite">
+          <p class="projects-loading">Loading project showcase...</p>
         </div>
       </section>
 

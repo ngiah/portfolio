@@ -10,6 +10,7 @@
   --cyan: #18a6c9;
   --green: #2ca66a;
   --shadow: 0 20px 60px rgba(15, 31, 56, 0.14);
+  --shadow-soft: 0 14px 38px rgba(15, 31, 56, 0.09);
 }
 
 * {
@@ -26,6 +27,7 @@ body {
   color: var(--ink);
   background: var(--paper);
   line-height: 1.6;
+  overflow-x: hidden;
 }
 
 img {
@@ -249,6 +251,8 @@ h3 {
   gap: clamp(28px, 5vw, 64px);
   align-items: end;
   margin-bottom: 34px;
+  padding-bottom: 22px;
+  border-bottom: 1px solid var(--line);
 }
 
 .intro-grid {
@@ -279,6 +283,72 @@ h3 {
   flex-wrap: wrap;
   gap: 10px;
   margin-bottom: 22px;
+}
+
+.project-showcase {
+  display: grid;
+  grid-template-columns: minmax(300px, 0.82fr) minmax(0, 1.35fr);
+  min-height: 430px;
+  margin-bottom: 32px;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--ink);
+  box-shadow: var(--shadow);
+}
+
+.project-showcase-copy {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: clamp(28px, 5vw, 56px);
+  color: var(--white);
+}
+
+.project-showcase-copy h3 {
+  max-width: 480px;
+  margin-bottom: 18px;
+  font-size: clamp(1.75rem, 3vw, 2.7rem);
+  line-height: 1.1;
+}
+
+.project-showcase-copy > p:not(.eyebrow) {
+  color: rgba(255, 255, 255, 0.68);
+}
+
+.project-showcase-visual {
+  min-height: 360px;
+  overflow: hidden;
+}
+
+.project-showcase-visual img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.showcase-metrics {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px;
+  margin-top: 28px;
+  padding-top: 22px;
+  border-top: 1px solid rgba(255, 255, 255, 0.16);
+}
+
+.showcase-metrics div {
+  display: grid;
+  gap: 2px;
+}
+
+.showcase-metrics strong {
+  color: var(--white);
+  font-size: 1.08rem;
+}
+
+.showcase-metrics span {
+  color: rgba(255, 255, 255, 0.55);
+  font-size: 0.74rem;
 }
 
 .filter {
@@ -315,11 +385,73 @@ h3 {
 }
 
 .project-card {
+  position: relative;
   display: flex;
   min-height: 100%;
   flex-direction: column;
   padding: 24px;
   transition: opacity 160ms ease, transform 160ms ease;
+}
+
+.project-cover {
+  aspect-ratio: 16 / 9;
+  margin: -24px -24px 24px;
+  overflow: hidden;
+  border-bottom: 1px solid var(--line);
+  background: #dfeaf3;
+}
+
+.project-cover img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 220ms ease;
+}
+
+.project-card:hover .project-cover img {
+  transform: scale(1.025);
+}
+
+.project-cover-placeholder {
+  display: grid;
+  width: 100%;
+  height: 100%;
+  place-items: center;
+  padding: 24px;
+  color: var(--blue);
+  font-size: 0.8rem;
+  font-weight: 800;
+  text-align: center;
+}
+
+.project-number {
+  margin-bottom: 26px;
+  color: #b6c7d9;
+  font-size: 2rem;
+  font-weight: 800;
+  line-height: 1;
+}
+
+.project-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 0 0 20px;
+}
+
+.project-links a {
+  border-bottom: 1px solid var(--blue-2);
+  color: var(--blue);
+  font-size: 0.82rem;
+  font-weight: 800;
+}
+
+.projects-loading,
+.projects-error {
+  grid-column: 1 / -1;
+  padding: 24px;
+  color: var(--muted);
+  text-align: center;
 }
 
 .project-card.hidden {
@@ -386,6 +518,8 @@ h3 {
 
 .skills-grid article {
   padding: 22px;
+  border-top: 3px solid var(--blue-2);
+  box-shadow: var(--shadow-soft);
 }
 
 .timeline {
@@ -484,6 +618,7 @@ h3 {
 
   .section-heading,
   .intro-grid,
+  .project-showcase,
   .project-grid,
   .skills-grid,
   .timeline,
@@ -507,6 +642,10 @@ h3 {
 
   .project-topline {
     flex-direction: column;
+  }
+
+  .showcase-metrics {
+    grid-template-columns: 1fr;
   }
 
   .button,
